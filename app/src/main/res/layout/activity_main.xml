@@ -13,8 +13,8 @@
 
     <com.wonderkiln.camerakit.CameraView
         android:id="@+id/camera"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cameraHeight"
         android:layout_gravity="center|top"
         app:layout_constrainedHeight="true" />
 
@@ -46,7 +46,7 @@
     <Button
         android:id="@+id/button_toggleCamera"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/cameraButton_height"
+        android:layout_height="@dimen/button_height"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="@dimen/cameraButton_marginBottom"
         android:text="@string/toggle_camera"
@@ -56,7 +56,7 @@
     <Button
         android:id="@+id/button_toggleObjectDetection"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/detectObject_height"
+        android:layout_height="@dimen/button_height"
         android:layout_gravity="bottom|center"
         android:text="@string/detect_object"
         android:textAllCaps="false"

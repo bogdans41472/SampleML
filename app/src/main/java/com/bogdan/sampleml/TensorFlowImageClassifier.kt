@@ -6,7 +6,6 @@ import android.graphics.Bitmap
 import org.tensorflow.lite.Interpreter
 import java.io.BufferedReader
 import java.io.FileInputStream
-import java.io.IOException
 import java.io.InputStreamReader
 import java.nio.ByteBuffer
 import java.nio.ByteBuffer.allocateDirect
@@ -76,10 +75,9 @@ class TensorFlowImageClassifier : Classifier {
     private fun loadLabelList(assetManager: AssetManager, labelPath: String): List<String> {
         val labelList = ArrayList<String>()
         val reader = BufferedReader(InputStreamReader(assetManager.open(labelPath)))
-        val line = reader.readLine()
 
-        while(line != null) {
-            labelList.add(line)
+        for (i in reader.readLine()) {
+            labelList.add(i.toString())
         }
 
         reader.close()
