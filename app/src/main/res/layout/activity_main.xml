@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bogdan.sampleml.MainActivity">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center|top"
+        app:layout_constrainedHeight="true" />
+
+    <LinearLayout
+        android:id="@+id/results_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/resultLayout_height"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/resultLayout_marginTop"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iamgeView_results"
+            android:layout_width="@dimen/resultLayout_imageHeight"
+            android:layout_height="@dimen/resultLayout_imageWidth"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/textView_results"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/resultLayout_imageHeight"
+            android:fadeScrollbars="false"
+            android:gravity="center"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_toggleCamera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cameraButton_height"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/cameraButton_marginBottom"
+        android:text="@string/toggle_camera"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button_toggleObjectDetection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detectObject_height"
+        android:layout_gravity="bottom|center"
+        android:text="@string/detect_object"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        android:textColor="@android:color/black" />
+
+</FrameLayout>

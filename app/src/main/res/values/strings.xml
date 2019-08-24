@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SampleML</string>
+    <string name="toggle_camera">Turn on Camera</string>
+    <string name="detect_object">Detect Object</string>
+</resources>

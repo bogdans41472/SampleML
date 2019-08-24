@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+
+    <!--    Camera stuff    -->
+    <dimen name="cameraButton_height">48dp</dimen>
+    <dimen name="cameraButton_marginBottom">50dp</dimen>
+    <dimen name="detectObject_height">48dp</dimen>
+
+    <!--    Results Layout  -->
+    <dimen name="resultLayout_height">80dp</dimen>
+    <dimen name="resultLayout_marginTop">300dp</dimen>
+    <dimen name="resultLayout_imageHeight">75dp</dimen>
+    <dimen name="resultLayout_imageWidth">75dp</dimen>
+</resources>
